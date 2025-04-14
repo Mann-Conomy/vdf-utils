@@ -1,12 +1,61 @@
 {
   "name": "@mann-conomy/vdf-utils",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A Node.js utility library for parsing and converting objects in Valve's Data File (VDF) format.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "fix": "eslint -c eslint.config.js . --fix",
+    "lint": "eslint -c eslint.config.js .",
+    "prepublishOnly": "npm run build",
+    "build": "npm run clean && tsc",
+    "coverage": "jest --coverage",
+    "clean": "rimraf dist",
+    "test": "jest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mann-Conomy/vdf-utils.git"
+  },
+  "keywords": [
+    "nodejs",
+    "steam",
+    "parser",
+    "typescript",
+    "format",
+    "valve",
+    "vdf",
+    "mann-conomy"
+  ],
+  "author": "The Mann-Conomy Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mann-Conomy/vdf-utils/issues"
+  },
+  "homepage": "https://github.com/Mann-Conomy/vdf-utils#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "@jest/globals": "^29.7.0",
+    "@mann-conomy/tsconfig": "^1.1.0",
+    "@mann-conomy/typescript-eslint-config": "^1.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.14.1",
+    "eslint": "^9.24.0",
+    "jest": "^29.7.0",
+    "rimraf": "^6.0.1",
+    "ts-jest": "^29.3.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2",
+    "typescript-eslint": "^8.30.0"
+  },
+  "engines": {
+    "node": ">=6.17.1"
+  },
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  }
 }
