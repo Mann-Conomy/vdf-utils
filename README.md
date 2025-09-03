@@ -70,7 +70,7 @@ const countries = {
         Language: "english",
         Tokens: {
             Steam_Country_US: "United States",
-            Steam_Country_AU: "Australia"
+            Steam_Country_AU: "Australia",
             Steam_Country_GB: "United Kingdom"
         }
     }
@@ -86,9 +86,9 @@ try {
      *      "Language"	"english"
      *      "Tokens"
      *      {
-     *          "Steam_Country_US"		"United States"						
-     *          "Steam_Country_AU"		"Australia"				
-     *          "Steam_Country_GB"		"United Kingdom"			
+     *          "Steam_Country_US"		"United States"
+     *          "Steam_Country_AU"		"Australia"
+     *          "Steam_Country_GB"		"United Kingdom"
      *      }
      *  }
      */
